@@ -596,6 +596,14 @@ video {
   z-index: 10;
 }
 
+.col-span-12 {
+  grid-column: span 12 / span 12;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -621,12 +629,21 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
 
 .-ml-1\.5 {
   margin-left: -0.375rem;
+}
+
+.-ml-2 {
+  margin-left: -0.5rem;
 }
 
 .mb-10 {
@@ -667,6 +684,10 @@ video {
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -733,12 +754,26 @@ video {
   transform-origin: top right;
 }
 
+.cursor-context-menu {
+  cursor: context-menu;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .scroll-mt-16 {
   scroll-margin-top: 4rem;
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -761,6 +796,18 @@ video {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -775,6 +822,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-lg {
@@ -901,6 +952,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -985,6 +1041,16 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-900 {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(11 173 225 / var(--tw-text-opacity));
@@ -1029,6 +1095,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1039,6 +1109,11 @@ video {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -1076,43 +1151,39 @@ video {
     content: "";
   }
 
-  0.28% {
+  0.83% {
     content: "F";
   }
 
-  0.67% {
+  0.92% {
     content: "Fr";
   }
 
-  1.21% {
+  1.65% {
     content: "Fro";
   }
 
-  1.86% {
+  1.8% {
     content: "Fron";
   }
 
-  2.64% {
+  2.3% {
     content: "Front";
   }
 
-  3.1% {
+  2.25% {
     content: "Fronte";
   }
 
-  3.3% {
+  3.07% {
     content: "Fronten";
   }
 
-  3.08% {
+  3.65% {
     content: "Frontend";
   }
 
-  4.33% {
-    content: "Frontend ";
-  }
-
-  4.35% {
+  4.24% {
     content: "Frontend D";
   }
 
@@ -1120,115 +1191,115 @@ video {
     content: "Frontend De";
   }
 
-  5.6% {
+  5.05% {
     content: "Frontend Dev";
   }
 
-  5.22% {
+  5.59% {
     content: "Frontend Deve";
   }
 
-  6.08% {
+  5.91% {
     content: "Frontend Devel";
   }
 
-  7% {
+  6.95% {
     content: "Frontend Develo";
   }
 
-  7.43% {
+  7.49% {
     content: "Frontend Develop";
   }
 
-  7.8% {
+  7.61% {
     content: "Frontend Develope";
   }
 
-  7.47%, 25.01% {
+  8.08%, 25.63% {
     content: "Frontend Developer";
   }
 
-  25.45% {
+  26.06% {
     content: "Frontend Develope";
   }
 
-  25.89% {
+  26.5% {
     content: "Frontend Develop";
   }
 
-  26.33% {
+  26.94% {
     content: "Frontend Develo";
   }
 
-  26.77% {
+  27.38% {
     content: "Frontend Devel";
   }
 
-  27.21% {
+  27.82% {
     content: "Frontend Deve";
   }
 
-  27.64% {
+  28.26% {
     content: "Frontend Dev";
   }
 
-  28.08% {
+  28.7% {
     content: "Frontend De";
   }
 
-  28.52% {
+  29.14% {
     content: "Frontend D";
   }
 
-  28.96% {
+  29.57% {
     content: "Frontend ";
   }
 
-  29.4% {
+  30.01% {
     content: "Frontend";
   }
 
-  29.84% {
+  30.45% {
     content: "Fronten";
   }
 
-  30.28% {
+  30.89% {
     content: "Fronte";
   }
 
-  30.71% {
+  31.33% {
     content: "Front";
   }
 
-  31.15% {
+  31.77% {
     content: "Fron";
   }
 
-  31.59% {
+  32.21% {
     content: "Fro";
   }
 
-  32.03% {
+  32.64% {
     content: "Fr";
   }
 
-  32.47% {
+  33.08% {
     content: "F";
   }
 
-  32.91% {
+  33.52% {
     content: "";
   }
 
-  33.5% {
+  34.43% {
     content: "B";
   }
 
-  33.34% {
+  34.67% {
     content: "Ba";
   }
 
-  33.95% {
+  34.85% {
     content: "Bac";
   }
 
@@ -1236,275 +1307,275 @@ video {
     content: "Back";
   }
 
-  35.47% {
+  36.19% {
     content: "Backe";
   }
 
-  35.25% {
+  36.33% {
     content: "Backen";
-  }
-
-  36.48% {
-    content: "Backend";
-  }
-
-  36.14% {
-    content: "Backend ";
-  }
-
-  36.94% {
-    content: "Backend D";
   }
 
   37.06% {
-    content: "Backend De";
-  }
-
-  37.66% {
-    content: "Backend Dev";
-  }
-
-  37.93% {
-    content: "Backend Deve";
-  }
-
-  39.1% {
-    content: "Backend Devel";
-  }
-
-  38.7% {
-    content: "Backend Develo";
-  }
-
-  39.79% {
-    content: "Backend Develop";
-  }
-
-  40.13% {
-    content: "Backend Develope";
-  }
-
-  40.45%, 57.99% {
-    content: "Backend Developer";
-  }
-
-  58.43% {
-    content: "Backend Develope";
-  }
-
-  58.87% {
-    content: "Backend Develop";
-  }
-
-  59.31% {
-    content: "Backend Develo";
-  }
-
-  59.75% {
-    content: "Backend Devel";
-  }
-
-  60.19% {
-    content: "Backend Deve";
-  }
-
-  60.62% {
-    content: "Backend Dev";
-  }
-
-  61.06% {
-    content: "Backend De";
-  }
-
-  61.5% {
-    content: "Backend D";
-  }
-
-  61.94% {
-    content: "Backend ";
-  }
-
-  62.38% {
     content: "Backend";
   }
 
-  62.82% {
+  37.26% {
+    content: "Backend ";
+  }
+
+  37.52% {
+    content: "Backend D";
+  }
+
+  38.31% {
+    content: "Backend De";
+  }
+
+  38.56% {
+    content: "Backend Dev";
+  }
+
+  38.32% {
+    content: "Backend Deve";
+  }
+
+  38.77% {
+    content: "Backend Devel";
+  }
+
+  40.15% {
+    content: "Backend Develo";
+  }
+
+  39.99% {
+    content: "Backend Develop";
+  }
+
+  40.94% {
+    content: "Backend Develope";
+  }
+
+  41.17%, 58.72% {
+    content: "Backend Developer";
+  }
+
+  59.15% {
+    content: "Backend Develope";
+  }
+
+  59.59% {
+    content: "Backend Develop";
+  }
+
+  60.03% {
+    content: "Backend Develo";
+  }
+
+  60.47% {
+    content: "Backend Devel";
+  }
+
+  60.91% {
+    content: "Backend Deve";
+  }
+
+  61.35% {
+    content: "Backend Dev";
+  }
+
+  61.79% {
+    content: "Backend De";
+  }
+
+  62.22% {
+    content: "Backend D";
+  }
+
+  62.66% {
+    content: "Backend ";
+  }
+
+  63.1% {
+    content: "Backend";
+  }
+
+  63.54% {
     content: "Backen";
   }
 
-  63.26% {
+  63.98% {
     content: "Backe";
   }
 
-  63.69% {
+  64.42% {
     content: "Back";
   }
 
-  64.13% {
+  64.86% {
     content: "Bac";
   }
 
-  64.57% {
+  65.29% {
     content: "Ba";
   }
 
-  65.01% {
+  65.73% {
     content: "B";
   }
 
-  65.45% {
+  66.17% {
     content: "";
   }
 
-  65.62% {
+  66.35% {
     content: "F";
   }
 
-  65.92% {
+  66.68% {
     content: "Fu";
   }
 
-  67% {
+  67.42% {
     content: "Ful";
   }
 
-  66.96% {
+  68.06% {
     content: "Full";
   }
 
-  67.35% {
+  68.01% {
     content: "Fulls";
   }
 
-  67.69% {
+  68.72% {
     content: "Fullst";
   }
 
-  68.35% {
+  69.45% {
     content: "Fullsta";
   }
 
-  69.2% {
+  70.11% {
     content: "Fullstac";
   }
 
-  69.41% {
+  69.68% {
     content: "Fullstack";
   }
 
-  70.16% {
+  70.13% {
     content: "Fullstack ";
   }
 
-  70.36% {
+  71.26% {
     content: "Fullstack D";
   }
 
-  70.69% {
+  70.94% {
     content: "Fullstack De";
   }
 
-  70.8% {
+  71.62% {
     content: "Fullstack Dev";
   }
 
-  71.12% {
+  72.65% {
     content: "Fullstack Deve";
   }
 
-  72.33% {
+  72.34% {
     content: "Fullstack Devel";
   }
 
-  72.02% {
+  73.63% {
     content: "Fullstack Develo";
   }
 
-  73.38% {
+  73.94% {
     content: "Fullstack Develop";
   }
 
-  73.84% {
+  73.79% {
     content: "Fullstack Develope";
   }
 
-  73.81%, 91.36% {
+  74.51%, 92.06% {
     content: "Fullstack Developer";
   }
 
-  91.8% {
+  92.49% {
     content: "Fullstack Develope";
   }
 
-  92.24% {
+  92.93% {
     content: "Fullstack Develop";
   }
 
-  92.67% {
+  93.37% {
     content: "Fullstack Develo";
   }
 
-  93.11% {
+  93.81% {
     content: "Fullstack Devel";
   }
 
-  93.55% {
+  94.25% {
     content: "Fullstack Deve";
   }
 
-  93.99% {
+  94.69% {
     content: "Fullstack Dev";
   }
 
-  94.43% {
+  95.13% {
     content: "Fullstack De";
   }
 
-  94.87% {
+  95.57% {
     content: "Fullstack D";
   }
 
-  95.31% {
+  96% {
     content: "Fullstack ";
   }
 
-  95.74% {
+  96.44% {
     content: "Fullstack";
   }
 
-  96.18% {
+  96.88% {
     content: "Fullstac";
   }
 
-  96.62% {
+  97.32% {
     content: "Fullsta";
   }
 
-  97.06% {
+  97.76% {
     content: "Fullst";
   }
 
-  97.5% {
+  98.2% {
     content: "Fulls";
   }
 
-  97.94% {
+  98.64% {
     content: "Full";
   }
 
-  98.38% {
+  99.07% {
     content: "Ful";
   }
 
-  98.81% {
+  99.51% {
     content: "Fu";
   }
 
-  99.25% {
+  99.95% {
     content: "F";
   }
 
-  99.69% {
+  100.39% {
     content: "";
   }
 }
@@ -1555,6 +1626,19 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.footer-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.footer-link {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
 .hover\:bg-\[\#008ae7\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 138 231 / var(--tw-bg-opacity));
@@ -1585,24 +1669,44 @@ body {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.hover\:text-sky-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
 .group:hover .group-hover\:text-slate-950 {
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
 }
 
+@media (prefers-color-scheme: dark) {
+  .dark\:text-slate-400 {
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 640px) {
-  .sm\:rounded-xl {
-    border-radius: 0.75rem;
+  .sm\:gap-8 {
+    gap: 2rem;
   }
 
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .sm\:rounded-xl {
+    border-radius: 0.75rem;
   }
 
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-center {
@@ -1611,17 +1715,45 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:mb-12 {
     margin-bottom: 3rem;
   }
 
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1629,11 +1761,29 @@ body {
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:static {
     position: static;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .lg\:mx-auto {

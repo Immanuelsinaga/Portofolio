@@ -22,3 +22,11 @@ body {
 .navbar-active > span:nth-child(2) {
 	@apply rotate-45 my-2;
 }
+
+.footer-title {
+	@apply text-slate-700 font-medium my-2;
+}
+
+.footer-link {
+	@apply text-slate-500;
+}
