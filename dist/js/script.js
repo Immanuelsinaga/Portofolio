@@ -18,3 +18,15 @@ window.onscroll = function () {
 		header.classList.remove("navbar-fixed");
 	}
 };
+
+// Dark Mode
+const darkToggle = document.querySelector("#darkmode");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+	if (darkToggle.checked) {
+		html.classList.add("dark");
+	} else {
+		html.classList.remove("dark");
+	}
+});

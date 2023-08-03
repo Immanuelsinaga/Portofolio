@@ -4,16 +4,16 @@
 
 body {
 	font-family: "Rubik", sans-serif;
+	@apply dark:dark:bg-slate-900 transition duration-300 ease-in-out;
 }
 
 .navbar-fixed {
-	@apply fixed z-[9999] bg-white bg-opacity-70;
-	backdrop-filter: blur(5px);
+	@apply fixed z-[9999] bg-white dark:bg-slate-900 bg-opacity-70 backdrop-blur-sm;
 	box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
 .line-menu {
-	@apply w-[20px] h-[2px] my-2 block bg-slate-900;
+	@apply w-[20px] h-[2px] my-2 block bg-slate-900 dark:bg-slate-100;
 }
 
 .navbar-active > span:nth-child(1) {

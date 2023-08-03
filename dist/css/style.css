@@ -634,16 +634,22 @@ video {
   margin-bottom: auto;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-ml-1 {
   margin-left: -0.25rem;
 }
 
 .-ml-1\.5 {
   margin-left: -0.375rem;
-}
-
-.-ml-2 {
-  margin-left: -0.5rem;
 }
 
 .mb-10 {
@@ -674,12 +680,24 @@ video {
   margin-right: 1rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -714,6 +732,10 @@ video {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -724,6 +746,10 @@ video {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-full {
@@ -748,6 +774,14 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .origin-top-right {
@@ -824,6 +858,10 @@ video {
   align-self: center;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -889,18 +927,23 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-sky-500 {
-  --tw-gradient-from: #0ea5e9 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(14 165 233 / 0) var(--tw-gradient-to-position);
+.from-sky-400 {
+  --tw-gradient-from: #38bdf8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(56 189 248 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-sky-700 {
-  --tw-gradient-to: #0369a1 var(--tw-gradient-to-position);
+.to-sky-600 {
+  --tw-gradient-to: #0284c7 var(--tw-gradient-to-position);
 }
 
 .bg-clip-text {
@@ -957,12 +1000,21 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1002,6 +1054,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1151,431 +1208,435 @@ video {
     content: "";
   }
 
-  0.83% {
+  0.33% {
     content: "F";
   }
 
-  0.92% {
+  0.88% {
     content: "Fr";
   }
 
-  1.65% {
+  1.29% {
     content: "Fro";
   }
 
-  1.8% {
+  1.91% {
     content: "Fron";
   }
 
-  2.3% {
+  1.85% {
     content: "Front";
   }
 
-  2.25% {
+  2.47% {
     content: "Fronte";
   }
 
-  3.07% {
+  2.96% {
     content: "Fronten";
   }
 
-  3.65% {
+  3.89% {
     content: "Frontend";
   }
 
-  4.24% {
-    content: "Frontend D";
-  }
-
-  4.87% {
-    content: "Frontend De";
-  }
-
-  5.05% {
-    content: "Frontend Dev";
-  }
-
-  5.59% {
-    content: "Frontend Deve";
-  }
-
-  5.91% {
-    content: "Frontend Devel";
-  }
-
-  6.95% {
-    content: "Frontend Develo";
-  }
-
-  7.49% {
-    content: "Frontend Develop";
-  }
-
-  7.61% {
-    content: "Frontend Develope";
-  }
-
-  8.08%, 25.63% {
-    content: "Frontend Developer";
-  }
-
-  26.06% {
-    content: "Frontend Develope";
-  }
-
-  26.5% {
-    content: "Frontend Develop";
-  }
-
-  26.94% {
-    content: "Frontend Develo";
-  }
-
-  27.38% {
-    content: "Frontend Devel";
-  }
-
-  27.82% {
-    content: "Frontend Deve";
-  }
-
-  28.26% {
-    content: "Frontend Dev";
-  }
-
-  28.7% {
-    content: "Frontend De";
-  }
-
-  29.14% {
-    content: "Frontend D";
-  }
-
-  29.57% {
+  4% {
     content: "Frontend ";
   }
 
-  30.01% {
+  4.15% {
+    content: "Frontend D";
+  }
+
+  4.34% {
+    content: "Frontend De";
+  }
+
+  5.06% {
+    content: "Frontend Dev";
+  }
+
+  5.24% {
+    content: "Frontend Deve";
+  }
+
+  6.28% {
+    content: "Frontend Devel";
+  }
+
+  6.42% {
+    content: "Frontend Develo";
+  }
+
+  6.89% {
+    content: "Frontend Develop";
+  }
+
+  7.64% {
+    content: "Frontend Develope";
+  }
+
+  7.69%, 25.23% {
+    content: "Frontend Developer";
+  }
+
+  25.67% {
+    content: "Frontend Develope";
+  }
+
+  26.11% {
+    content: "Frontend Develop";
+  }
+
+  26.55% {
+    content: "Frontend Develo";
+  }
+
+  26.99% {
+    content: "Frontend Devel";
+  }
+
+  27.43% {
+    content: "Frontend Deve";
+  }
+
+  27.86% {
+    content: "Frontend Dev";
+  }
+
+  28.3% {
+    content: "Frontend De";
+  }
+
+  28.74% {
+    content: "Frontend D";
+  }
+
+  29.18% {
+    content: "Frontend ";
+  }
+
+  29.62% {
     content: "Frontend";
   }
 
-  30.45% {
+  30.06% {
     content: "Fronten";
   }
 
-  30.89% {
+  30.5% {
     content: "Fronte";
   }
 
-  31.33% {
+  30.93% {
     content: "Front";
   }
 
-  31.77% {
+  31.37% {
     content: "Fron";
   }
 
-  32.21% {
+  31.81% {
     content: "Fro";
   }
 
-  32.64% {
+  32.25% {
     content: "Fr";
   }
 
-  33.08% {
+  32.69% {
     content: "F";
   }
 
-  33.52% {
+  33.13% {
     content: "";
   }
 
-  34.43% {
+  33.34% {
     content: "B";
   }
 
-  34.67% {
+  33.64% {
     content: "Ba";
   }
 
-  34.85% {
+  34.61% {
     content: "Bac";
   }
 
-  35.09% {
+  34.42% {
     content: "Back";
   }
 
-  36.19% {
+  34.92% {
     content: "Backe";
   }
 
-  36.33% {
+  35.93% {
     content: "Backen";
   }
 
-  37.06% {
+  36.05% {
     content: "Backend";
   }
 
-  37.26% {
+  37.1% {
     content: "Backend ";
   }
 
-  37.52% {
+  37.13% {
     content: "Backend D";
   }
 
-  38.31% {
+  37.29% {
     content: "Backend De";
   }
 
-  38.56% {
+  37.62% {
     content: "Backend Dev";
   }
 
-  38.32% {
+  38.11% {
     content: "Backend Deve";
+  }
+
+  39.32% {
+    content: "Backend Devel";
   }
 
   38.77% {
-    content: "Backend Devel";
-  }
-
-  40.15% {
     content: "Backend Develo";
   }
 
-  39.99% {
+  39.5% {
     content: "Backend Develop";
   }
 
-  40.94% {
+  39.81% {
     content: "Backend Develope";
   }
 
-  41.17%, 58.72% {
+  40.4%, 57.95% {
     content: "Backend Developer";
   }
 
-  59.15% {
+  58.39% {
     content: "Backend Develope";
   }
 
-  59.59% {
+  58.82% {
     content: "Backend Develop";
   }
 
-  60.03% {
+  59.26% {
     content: "Backend Develo";
   }
 
-  60.47% {
+  59.7% {
     content: "Backend Devel";
   }
 
-  60.91% {
+  60.14% {
     content: "Backend Deve";
   }
 
-  61.35% {
+  60.58% {
     content: "Backend Dev";
   }
 
-  61.79% {
+  61.02% {
     content: "Backend De";
   }
 
-  62.22% {
+  61.46% {
     content: "Backend D";
   }
 
-  62.66% {
+  61.89% {
     content: "Backend ";
   }
 
-  63.1% {
+  62.33% {
     content: "Backend";
   }
 
-  63.54% {
+  62.77% {
     content: "Backen";
   }
 
-  63.98% {
+  63.21% {
     content: "Backe";
   }
 
-  64.42% {
+  63.65% {
     content: "Back";
   }
 
-  64.86% {
+  64.09% {
     content: "Bac";
   }
 
-  65.29% {
+  64.53% {
     content: "Ba";
   }
 
-  65.73% {
+  64.96% {
     content: "B";
   }
 
-  66.17% {
+  65.4% {
     content: "";
   }
 
-  66.35% {
+  65.66% {
     content: "F";
   }
 
-  66.68% {
+  66.49% {
     content: "Fu";
   }
 
-  67.42% {
+  67.12% {
     content: "Ful";
   }
 
-  68.06% {
+  66.7% {
     content: "Full";
   }
 
-  68.01% {
+  67.2% {
     content: "Fulls";
   }
 
-  68.72% {
+  68.32% {
     content: "Fullst";
   }
 
-  69.45% {
+  68.87% {
     content: "Fullsta";
   }
 
-  70.11% {
+  68.78% {
     content: "Fullstac";
   }
 
-  69.68% {
+  69.33% {
     content: "Fullstack";
   }
 
-  70.13% {
+  70.17% {
     content: "Fullstack ";
   }
 
-  71.26% {
+  70.34% {
     content: "Fullstack D";
   }
 
-  70.94% {
+  70.8% {
     content: "Fullstack De";
   }
 
-  71.62% {
+  71.58% {
     content: "Fullstack Dev";
   }
 
-  72.65% {
+  71.86% {
     content: "Fullstack Deve";
   }
 
-  72.34% {
+  72.01% {
     content: "Fullstack Devel";
   }
 
-  73.63% {
+  72.84% {
     content: "Fullstack Develo";
   }
 
-  73.94% {
+  73.36% {
     content: "Fullstack Develop";
   }
 
-  73.79% {
+  73.27% {
     content: "Fullstack Develope";
   }
 
-  74.51%, 92.06% {
+  74.17%, 91.72% {
     content: "Fullstack Developer";
   }
 
-  92.49% {
+  92.15% {
     content: "Fullstack Develope";
   }
 
-  92.93% {
+  92.59% {
     content: "Fullstack Develop";
   }
 
-  93.37% {
+  93.03% {
     content: "Fullstack Develo";
   }
 
-  93.81% {
+  93.47% {
     content: "Fullstack Devel";
   }
 
-  94.25% {
+  93.91% {
     content: "Fullstack Deve";
   }
 
-  94.69% {
+  94.35% {
     content: "Fullstack Dev";
   }
 
-  95.13% {
+  94.79% {
     content: "Fullstack De";
   }
 
-  95.57% {
+  95.22% {
     content: "Fullstack D";
   }
 
-  96% {
+  95.66% {
     content: "Fullstack ";
   }
 
-  96.44% {
+  96.1% {
     content: "Fullstack";
   }
 
-  96.88% {
+  96.54% {
     content: "Fullstac";
   }
 
-  97.32% {
+  96.98% {
     content: "Fullsta";
   }
 
-  97.76% {
+  97.42% {
     content: "Fullst";
   }
 
-  98.2% {
+  97.86% {
     content: "Fulls";
   }
 
-  98.64% {
+  98.29% {
     content: "Full";
   }
 
-  99.07% {
+  98.73% {
     content: "Ful";
   }
 
-  99.51% {
+  99.17% {
     content: "Fu";
   }
 
-  99.95% {
+  99.61% {
     content: "F";
   }
 
-  100.39% {
+  100.05% {
     content: "";
   }
 }
@@ -1590,6 +1651,16 @@ video {
 
 body {
   font-family: "Rubik", sans-serif;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+:is(.dark :is(.dark body)) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .navbar-fixed {
@@ -1597,8 +1668,17 @@ body {
   z-index: 9999;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.7;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+:is(.dark .navbar-fixed) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.navbar-fixed {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -1610,6 +1690,11 @@ body {
   width: 20px;
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+:is(.dark .line-menu) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .navbar-active > span:nth-child(1) {
@@ -1664,6 +1749,11 @@ body {
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1672,6 +1762,11 @@ body {
 .hover\:text-sky-500:hover {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover {
@@ -1683,11 +1778,111 @@ body {
   color: rgb(2 6 23 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:text-slate-400 {
-    --tw-text-opacity: 1;
-    color: rgb(148 163 184 / var(--tw-text-opacity));
-  }
+:is(.dark .dark\:block) {
+  display: block;
+}
+
+:is(.dark .dark\:hidden) {
+  display: none;
+}
+
+:is(.dark .dark\:border-gray-800) {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:bg-darkbg) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 28 41 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-slate-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-gradient-to-r) {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+:is(.dark .dark\:from-sky-200) {
+  --tw-gradient-from: #bae6fd var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(186 230 253 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+:is(.dark .dark\:from-sky-400) {
+  --tw-gradient-from: #38bdf8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(56 189 248 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+:is(.dark .dark\:to-sky-400) {
+  --tw-gradient-to: #38bdf8 var(--tw-gradient-to-position);
+}
+
+:is(.dark .dark\:to-sky-600) {
+  --tw-gradient-to: #0284c7 var(--tw-gradient-to-position);
+}
+
+:is(.dark .dark\:bg-clip-text) {
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+:is(.dark .dark\:text-slate-100) {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-slate-200) {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-slate-300) {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-slate-400) {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-transparent) {
+  color: transparent;
+}
+
+:is(.dark .dark\:shadow-\[0_35px_60px_-15px_rgba\(255\2c 255\2c 255\2c 0\.3\)\]) {
+  --tw-shadow: 0 35px 60px -15px rgba(255,255,255,0.3);
+  --tw-shadow-colored: 0 35px 60px -15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+:is(.dark .dark\:shadow-slate-700) {
+  --tw-shadow-color: #334155;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:hover\:bg-gray-800:hover) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:hover\:text-blue-500:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-sky-600:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+:is(.dark .group:hover .dark\:group-hover\:text-slate-100) {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1715,10 +1910,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:order-1 {
-    order: 1;
-  }
-
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
@@ -1728,16 +1919,8 @@ body {
     margin-right: auto;
   }
 
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .md\:mb-12 {
     margin-bottom: 3rem;
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem;
   }
 
   .md\:flex {
@@ -1797,6 +1980,10 @@ body {
 
   .lg\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
   }
 
   .lg\:mt-12 {
@@ -1890,7 +2077,23 @@ body {
     line-height: 1.75rem;
   }
 
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  :is(.dark .lg\:dark\:shadow-none) {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);

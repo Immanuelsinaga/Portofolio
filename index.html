@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth dakr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,11 +24,33 @@
 							src="dist/img/logo.svg"
 							alt="Logo" />
 						<span
-							class="font-semibold text-xl text-slate-900 block py-6 hover:text-sky-500 cursor-context-menu select-none"
+							class="font-semibold text-xl text-slate-900 block py-6 hover:text-sky-500 cursor-context-menu select-none dark:text-slate-100 dark:hover:text-sky-600"
 							>Immanuel Sinaga</span
 						>
 					</div>
 					<div class="flex items-center px-4">
+						<input type="checkbox" id="darkmode" class="hidden" />
+						<label for="darkmode">
+							<div
+								class="text-slate-500 dark:text-slate-100 hover:text-slate-600 w-8 h-8 flex items-center justify-center lg:mr-2 mr-8 bg-transparent p-2 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-800">
+								<svg
+									viewBox="0 0 24 24"
+									class="w-5 h-5"
+									astro-icon="tabler:sun">
+									<g
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										class="icon-tabler">
+										<circle cx="12" cy="12" r="4"></circle>
+										<path
+											d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m0 11.4.7.7m-12.1-.7-.7.7"></path>
+									</g>
+								</svg>
+							</div>
+						</label>
 						<button
 							id="navbar"
 							name="button"
@@ -41,26 +63,26 @@
 						</button>
 						<nav
 							id="menu"
-							class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+							class="hidden absolute py-5 bg-white dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:dark:shadow-none lg:rounded-none">
 							<ul class="block lg:flex">
 								<li class="group">
 									<a
-										href="#about"
-										class="font-semibold text-slate-500 py-2 mx-5 flex group-hover:text-slate-950"
+										href="about.html"
+										class="font-semibold text-slate-500 py-2 mx-5 flex group-hover:text-slate-950 dark:group-hover:text-slate-100"
 										>About</a
 									>
 								</li>
 								<li class="group">
 									<a
 										href="#Home"
-										class="font-semibold text-slate-500 py-2 mx-5 flex group-hover:text-slate-950"
+										class="font-semibold text-slate-500 py-2 mx-5 flex group-hover:text-slate-950 dark:group-hover:text-slate-100"
 										>Contact</a
 									>
 								</li>
 								<li class="group">
 									<a
 										href="#Home"
-										class="font-semibold text-slate-500 py-2 mx-5 flex group-hover:text-slate-950"
+										class="font-semibold text-slate-500 py-2 mx-5 flex group-hover:text-slate-950 dark:group-hover:text-slate-100"
 										>Blog</a
 									>
 								</li>
@@ -77,17 +99,20 @@
 			<div class="container max-w-6xl mx-auto">
 				<div class="flex flex-wrap">
 					<div class="w-full lg:w-1/2 px-auto self-center">
-						<h1 class="font-bold text-2xl text-slate-950 lg:text-4xl px-4">
+						<h1
+							class="font-bold text-2xl text-slate-950 lg:text-4xl px-4 dark:text-slate-200">
 							Hello there 👋
 						</h1>
-						<h1 class="font-bold text-5xl text-slate-950 lg:text-7xl px-4">
+						<h1
+							class="font-bold text-5xl text-slate-950 lg:text-7xl px-4 dark:text-slate-200">
 							I'm
 							<span
-								class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-sky-700"
+								class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-sky-600"
 								>Immanuel.</span
 							>
 						</h1>
-						<h1 class="px-5 font-thin text-slate-800 text-xl lg:text-2xl">
+						<h1
+							class="px-5 font-thin text-slate-800 text-xl lg:text-2xl dark:text-slate-200">
 							I'm a <span class="type-job font-bold"></span>
 						</h1>
 						<a
@@ -155,12 +180,19 @@
 
 					<div class="w-full lg:w-1/2 px-auto">
 						<img
-							class="mx-auto sm:rounded-xl shadow-xl bg-gray-400 w-full mt-5 lg:-mt-5"
+							class="mx-auto sm:rounded-xl shadow-xl bg-gray-400 w-full mt-5 lg:-mt-5 hidden dark:block"
+							width="1490"
+							height="800"
+							src="./dist/img/immanuel dark1.png"
+							alt="Immanuel Sinaga" />
+						<img
+							class="mx-auto sm:rounded-xl shadow-xl bg-gray-400 w-full mt-5 lg:-mt-5 dark:hidden"
 							width="1490"
 							height="838"
 							src="./dist/img/Immanuel.JPG"
 							alt="Immanuel Sinaga" />
-						<h3 class="text-center font-thin py-4 text-sm lg:text-lg">
+						<h3
+							class="text-center font-thin py-4 text-sm lg:text-lg dark:text-slate-100">
 							🧑🏻‍🏫 Content Creator 🧑🏻‍💻 Cyber Security & Full Stack Web Developer
 						</h3>
 					</div>
@@ -172,18 +204,23 @@
 		<!-- Fav Stack Start -->
 		<section class="scroll-mt-16">
 			<div
-				class="mx-auto max-w-6xl bg-bluebg px-4 py-16 lg:rounded-xl lg:px-8 lg:py-20">
+				class="mx-auto max-w-6xl bg-bluebg px-4 py-16 lg:rounded-xl lg:px-8 lg:py-20 dark:bg-darkbg">
 				<div
 					class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
 					<p
-						class="text-base text-secondary font-semibold tracking-wide uppercase">
+						class="text-base text-secondary font-semibold tracking-wide uppercase dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-sky-200 dark:to-sky-400">
 						IT'S TECHIN' TIME
 					</p>
 					<h2
-						class="text-4xl font-bold leading-tight tracking-tighter text-slate-900 lg:mb-4 mb-2">
-						My Favorite <span class="text-primary">Stack</span>
+						class="text-4xl font-bold leading-tight tracking-tighter text-slate-900 lg:mb-4 mb-2 dark:text-slate-200">
+						My Favorite
+						<span
+							class="text-primary dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-sky-400 dark:to-sky-600"
+							>Stack</span
+						>
 					</h2>
-					<p class="max-w-3xl mx-auto lg:text-center lg:text-xl text-gray-600">
+					<p
+						class="max-w-3xl mx-auto lg:text-center lg:text-xl text-gray-600 dark:text-slate-100">
 						Mostly using web technologies. See complete list
 					</p>
 				</div>
@@ -211,8 +248,12 @@
 								</div>
 							</div>
 							<div>
-								<h3 class="mb-2 text-xl font-medium">General Stack</h3>
-								<p>JavaScript, Node.js, npm/yarn/pnpm, Python.</p>
+								<h3 class="mb-2 text-xl font-medium dark:text-slate-100">
+									General Stack
+								</h3>
+								<p class="dark:text-slate-100">
+									JavaScript, Node.js, npm/yarn/pnpm, Python.
+								</p>
 							</div>
 						</div>
 						<div class="flex max-w-md flex-row">
@@ -238,10 +279,12 @@
 								</div>
 							</div>
 							<div>
-								<h3 class="mb-2 text-xl font-medium">
+								<h3 class="mb-2 text-xl font-medium dark:text-slate-100">
 									Frontend and UI Components
 								</h3>
-								<p>Figma, HTML, CSS, JavaScript, Tailwind CSS, React.</p>
+								<p class="dark:text-slate-100">
+									Figma, HTML, CSS, JavaScript, Tailwind CSS, React.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -269,8 +312,10 @@
 								</div>
 							</div>
 							<div>
-								<h3 class="mb-2 text-xl font-medium">Backend and Database</h3>
-								<p>MySQL/MariaDB.</p>
+								<h3 class="mb-2 text-xl font-medium dark:text-slate-100">
+									Backend and Database
+								</h3>
+								<p class="dark:text-slate-100">MySQL/MariaDB.</p>
 							</div>
 						</div>
 						<div class="flex max-w-md flex-row">
@@ -295,10 +340,12 @@
 								</div>
 							</div>
 							<div>
-								<h3 class="mb-2 text-xl font-medium">
+								<h3 class="mb-2 text-xl font-medium dark:text-slate-100">
 									Full Stack, Web API, Testing, CI/CD
 								</h3>
-								<p>Next.js, REST API, GitHub Actions.</p>
+								<p class="dark:text-slate-100">
+									Next.js, REST API, GitHub Actions.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -313,35 +360,36 @@
 				<div class="w-full px-auto">
 					<div class="mx-auto mb-16 text-center">
 						<p
-							class="text-base text-secondary font-semibold tracking-wide uppercase">
+							class="text-base text-secondary font-semibold tracking-wide uppercase dark:bg-clip-text dark:text-transparent dark:bg-gradient-to-r dark:from-sky-200 dark:to-sky-400">
 							PORTOFOLIO
 						</p>
 						<h2
-							class="text-4xl font-bold leading-tight tracking-tighter text-slate-900 mb-4">
+							class="text-4xl font-bold leading-tight tracking-tighter text-slate-900 mb-4 dark:text-slate-200">
 							Featured Projects
 						</h2>
 					</div>
 					<div
-						class="flex flex-wrap justify-center bg-white p-2 lg:p-6 rounded-xl shadow-xl">
+						class="flex flex-wrap justify-center bg-white p-2 lg:p-6 rounded-xl shadow-xl dark:bg-slate-800 dark:shadow-slate-700 my-5">
 						<div class="w-full lg:w-1/2">
 							<img
 								class="rounded-lg bg-gray-400 w-full"
-								src="dist/img/p-1.png"
-								alt="" />
+								src="dist/img/portofolio/p-1.png"
+								alt="website school library" />
 						</div>
 						<div class="lg:w-1/2">
-							<h2 class="font-bold my-5 text-center lg:text-xl uppercase">
+							<h2
+								class="font-bold my-5 text-center lg:text-xl uppercase dark:text-slate-100">
 								School Library 📚
 							</h2>
 							<p
-								class="text-slate-600 font-medium lg:max-w-sm mx-auto px-4 text-center">
+								class="text-slate-600 font-medium lg:max-w-sm mx-auto px-4 text-center dark:text-slate-100">
 								a school library website is a place where people can explore,
 								acquire, and share knowledge.
 							</p>
 							<div class="mt-12 flex flex-wrap justify-center items-center">
 								<a
 									href="https://github.com/Immanuelsinaga/perpus-smancil"
-									class="font-medium text-slate-900 flex items-center text-lg hover:text-blue-500"
+									class="font-medium text-slate-900 flex items-center text-lg hover:text-blue-500 dark:text-slate-200 dark:hover:text-blue-500"
 									>Code
 									<svg
 										viewBox="0 0 24 24"
@@ -353,7 +401,54 @@
 								></a>
 								<a
 									href="https://immanuelsinaga.github.io/perpus-smancil/"
-									class="font-medium text-slate-900 flex items-center text-lg hover:text-blue-500 ml-3"
+									class="font-medium text-slate-900 flex items-center text-lg hover:text-blue-500 ml-3 dark:text-slate-200 dark:hover:text-blue-500"
+									>Live Demo
+									<svg
+										viewBox="0 0 15 15"
+										class="w-6 h-6"
+										astro-icon="mdi:github">
+										<path
+											fill="currentColor"
+											d="M12 13C12.5523 13 13 12.5523 13 12V3C13 2.44771 12.5523 2 12 2H3C2.44771 2 2 2.44771 2 3V6.5C2 6.77614 2.22386 7 2.5 7C2.77614 7 3 6.77614 3 6.5V3H12V12H8.5C8.22386 12 8 12.2239 8 12.5C8 12.7761 8.22386 13 8.5 13H12ZM9 6.5C9 6.5001 9 6.50021 9 6.50031V6.50035V9.5C9 9.77614 8.77614 10 8.5 10C8.22386 10 8 9.77614 8 9.5V7.70711L2.85355 12.8536C2.65829 13.0488 2.34171 13.0488 2.14645 12.8536C1.95118 12.6583 1.95118 12.3417 2.14645 12.1464L7.29289 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H8.5C8.56779 6 8.63244 6.01349 8.69139 6.03794C8.74949 6.06198 8.80398 6.09744 8.85143 6.14433C8.94251 6.23434 8.9992 6.35909 8.99999 6.49708L8.99999 6.49738"></path></svg
+								></a>
+							</div>
+						</div>
+					</div>
+					<div
+						class="flex flex-wrap justify-center bg-white p-2 lg:p-6 rounded-xl shadow-xl dark:bg-slate-800 dark:shadow-slate-700">
+						<div class="w-full lg:w-1/2">
+							<img
+								class="rounded-lg bg-gray-400 w-full"
+								src="dist/img/portofolio/p-2.png"
+								alt="website school library" />
+						</div>
+						<div class="lg:w-1/2">
+							<h2
+								class="font-bold my-5 text-center lg:text-xl uppercase dark:text-slate-100">
+								Personal Web Profile 💻
+							</h2>
+							<p
+								class="text-slate-600 font-medium lg:max-w-sm mx-auto px-4 text-center dark:text-slate-100">
+								A portfolio website is a personal website that provides
+								information about what you do, what services you may offer, and
+								how to contact you or your company.
+							</p>
+							<div class="mt-12 flex flex-wrap justify-center items-center">
+								<a
+									href="https://github.com/Immanuelsinaga/Portofolio"
+									class="font-medium text-slate-900 flex items-center text-lg hover:text-blue-500 dark:text-slate-200 dark:hover:text-blue-500"
+									>Code
+									<svg
+										viewBox="0 0 24 24"
+										class="w-6 h-6"
+										astro-icon="mdi:github">
+										<path
+											fill="currentColor"
+											d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path></svg
+								></a>
+								<a
+									href="https://immanuelsinaga.github.io/Portofolio/"
+									class="font-medium text-slate-900 flex items-center text-lg hover:text-blue-500 ml-3 dark:text-slate-200 dark:hover:text-blue-500"
 									>Live Demo
 									<svg
 										viewBox="0 0 15 15"
@@ -372,7 +467,7 @@
 		<!-- Feature Project End -->
 
 		<!-- Footer Start -->
-		<footer id="footer" class="border-t border-gray-200">
+		<footer id="footer" class="border-t border-gray-200 dark:border-gray-800">
 			<div class="mx-auto max-w-6xl px-4 sm:px-6">
 				<div class="grid grid-cols-12 gap-4 gap-y-8 py-8 sm:gap-8 md:py-12">
 					<div class="col-span-12 lg:col-span-4">
@@ -381,7 +476,7 @@
 								class="inline-block text-xl font-medium opacity-50 grayscale transition hover:opacity-100"
 								href="/">
 								<span
-									class="flex items-center gap-2 self-center text-2xl font-bold text-gray-900 hover:text-primary-700 whitespace-nowrap">
+									class="flex items-center gap-2 self-center text-2xl font-bold text-gray-900 hover:text-primary-700 whitespace-nowrap dark:text-slate-300">
 									<img class="w-6 h-6" alt="Logo" src="dist/img/logo.svg" />
 									<span> Immanuel Sinaga</span>
 								</span>
@@ -394,7 +489,7 @@
 						</div>
 					</div>
 					<div class="col-span-6 md:col-span-3 lg:col-span-2">
-						<div class="footer-title">Product</div>
+						<div class="footer-title dark:text-slate-200">Product</div>
 						<ul class="text-sm">
 							<li class="mb-2">
 								<a class="footer-link" href="/">Features</a>
@@ -420,7 +515,7 @@
 						</ul>
 					</div>
 					<div class="col-span-6 md:col-span-3 lg:col-span-2">
-						<div class="footer-title">Platform</div>
+						<div class="footer-title dark:text-slate-200">Platform</div>
 						<ul class="text-sm">
 							<li class="mb-2">
 								<a class="footer-link" href="/">Developer API</a>
@@ -440,7 +535,7 @@
 						</ul>
 					</div>
 					<div class="col-span-6 md:col-span-3 lg:col-span-2">
-						<div class="footer-title">Support</div>
+						<div class="footer-title dark:text-slate-200">Support</div>
 						<ul class="text-sm">
 							<li class="mb-2">
 								<a class="footer-link" href="/">Docs</a>
@@ -460,10 +555,10 @@
 						</ul>
 					</div>
 					<div class="col-span-6 md:col-span-3 lg:col-span-2">
-						<div class="footer-title">Company</div>
+						<div class="footer-title dark:text-slate-200">Company</div>
 						<ul class="text-sm">
 							<li class="mb-2">
-								<a class="footer-link" href="/"> About</a>
+								<a class="footer-link" href=""> About</a>
 							</li>
 							<li class="mb-2">
 								<a class="footer-link" href="/"> Blog</a>
@@ -487,238 +582,6 @@
 					</div>
 				</div>
 				<div class="py-6 md:flex md:items-center md:justify-between md:py-8">
-					<!-- <ul class="mb-4 -ml-2 flex flex-wrap md:order-1 md:ml-4 md:mb-0">
-						<li>
-							<a
-								class="btn-icon-brand hover:text-rss dark:hover:text-rss"
-								aria-label="RSS Feed"
-								href="/rss.xml"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg viewBox="0 0 24 24" class="h-5 w-5" astro-icon="mdi:rss">
-									<path
-										fill="currentColor"
-										d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20 5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-twitter dark:hover:text-twitter"
-								aria-label="Twitter"
-								href="https://twitter.com/mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:twitter">
-									<path
-										fill="currentColor"
-										d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-github dark:hover:text-github"
-								aria-label="GitHub"
-								href="https://github.com/mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:github">
-									<path
-										fill="currentColor"
-										d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-linkedin dark:hover:text-linkedin"
-								aria-label="LinkedIn"
-								href="https://linkedin.com/in/mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:linkedin">
-									<path
-										fill="currentColor"
-										d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-youtube dark:hover:text-youtube"
-								aria-label="YouTube"
-								href="https://youtube.com/mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:youtube">
-									<path
-										fill="currentColor"
-										d="m10 15 5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-telegram dark:hover:text-telegram"
-								aria-label="Telegram"
-								href="https://t.me/mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:telegram">
-									<path
-										fill="currentColor"
-										d="m9.78 18.65.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-facebook dark:hover:text-facebook"
-								aria-label="Facebook"
-								href="https://facebook.com/mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:facebook">
-									<path
-										fill="currentColor"
-										d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-instagram dark:hover:text-instagram"
-								aria-label="Instagram"
-								href="https://instagram.com/mhaidarhanif_"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:instagram">
-									<path
-										fill="currentColor"
-										d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-devto dark:hover:text-devto"
-								aria-label="DEV Community"
-								href="https://dev.to/haidar"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:dev-to">
-									<path
-										fill="currentColor"
-										d="M7.73 11.93c0 1.72-.02 1.83-.23 2.07-.19.17-.38.23-.76.23l-.51.01-.03-2.27-.02-2.27h.52c.35 0 .6.07.77.21.24.21.26.25.26 2.02M22 7.5v9c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2v-9c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2M8.93 11.73c-.03-1.84-.05-1.99-.29-2.39-.4-.68-.85-.84-2.36-.84H5v7h1.21c1.33 0 1.89-.17 2.29-.71.41-.53.5-.98.43-3.06m4.19-3.23h-1.48c-1.49 0-1.5 0-1.71.28S9.7 9.21 9.7 12v2.96l.27.27c.25.27.31.27 1.71.27h1.44v-1.19l-1.09-.04-1.1-.03V12.6l.68-.03.66-.04v-1.19h-1.39V9.7h2.24V8.5m5.88.06c0-.06-.3-.06-.66-.06l-.68.06-.59 2.35c-.38 1.48-.62 2.27-.67 2.13-.08-.27-1.14-4.44-1.14-4.49 0-.05-.31-.05-.68-.05h-.69l.41 1.55c.2.87.59 2.28.81 3.15.34 1.35.46 1.65.75 1.94.2.22.45.36.61.36.33 0 .76-.34.9-.73C17.5 14.5 19 8.69 19 8.56z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-hashnode dark:hover:text-hashnode"
-								aria-label="Hashnode"
-								href="https://hashnode.com/@mhaidarhanif"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg viewBox="0 0 24 24" class="h-5 w-5" astro-icon="mdi:nut">
-									<path
-										fill="currentColor"
-										d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 7a5 5 0 0 0-5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0-5-5z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-showwcase dark:hover:text-showwcase"
-								aria-label="Showwcase"
-								href="https://showwcase.com/haidar"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:bag-personal">
-									<path
-										fill="currentColor"
-										d="M16 5V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v1a4 4 0 0 0-4 4v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a4 4 0 0 0-4-4m-6-1h4v1h-4V4m2 5 2 2-2 2-2-2 2-2m6 7H9v2H8v-2H6v-1h12v1z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-polywork dark:hover:text-polywork"
-								aria-label="Polywork"
-								href="https://polywork.com/haidar"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:apps-box">
-									<path
-										fill="currentColor"
-										d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m2 4v2h2V7H7m4 0v2h2V7h-2m4 0v2h2V7h-2m-8 4v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2m-8 4v2h2v-2H7m4 0v2h2v-2h-2m4 0v2h2v-2h-2z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-cv dark:hover:text-cv"
-								aria-label="CV"
-								href="https://haidar.read.cv"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg
-									viewBox="0 0 24 24"
-									class="h-5 w-5"
-									astro-icon="mdi:file-document">
-									<path
-										fill="currentColor"
-										d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2m9 16v-2H6v2h9m3-4v-2H6v2h12z"></path>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a
-								class="btn-icon-brand hover:text-catamyst dark:hover:text-catamyst"
-								aria-label="Catamyst"
-								href="https://catamyst.com/haidar"
-								target="_blank"
-								rel="noopener noreferrer">
-								<svg viewBox="0 0 24 24" class="h-5 w-5" astro-icon="mdi:cat">
-									<path
-										fill="currentColor"
-										d="m12 8-1.33.09C9.81 7.07 7.4 4.5 5 4.5c0 0-1.97 2.96-.04 6.91-.55.83-.89 1.26-.96 2.25l-1.93.29.21.98 1.76-.26.14.71-1.57.94.47.89 1.45-.89C5.68 18.76 8.59 20 12 20s6.32-1.24 7.47-3.68l1.45.89.47-.89-1.57-.94.14-.71 1.76.26.21-.98-1.93-.29c-.07-.99-.41-1.42-.96-2.25C20.97 7.46 19 4.5 19 4.5c-2.4 0-4.81 2.57-5.67 3.59L12 8m-3 3a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m6 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-4 3h2l-.7 1.39c.2.64.76 1.11 1.45 1.11a1.5 1.5 0 0 0 1.5-1.5h.5a2 2 0 0 1-2 2c-.75 0-1.4-.41-1.75-1-.35.59-1 1-1.75 1a2 2 0 0 1-2-2h.5a1.5 1.5 0 0 0 1.5 1.5c.69 0 1.25-.47 1.45-1.11L11 14z"></path>
-								</svg>
-							</a>
-						</li>
-					</ul> -->
-
 					<div class="mr-4 text-sm text-gray-700 dark:text-slate-400">
 						<span>© 2023</span>
 						<span class="font-medium">Immanuel Sinaga</span>
